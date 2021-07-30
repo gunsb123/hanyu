@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/view_state"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:orientation="vertical" />
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            android:orientation="horizontal">
+            <!--返回键-->
+            <ImageView
+                android:id="@+id/head_back"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center_vertical"
+                android:onClick="onBack"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/back" />
+
+            <!--标题-->
+            <TextView
+                android:layout_marginLeft="@dimen/dp_50"
+                android:id="@+id/head_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_17" />
+            <!--按钮-->
+            <TextView
+                android:layout_marginRight="@dimen/dp_10"
+                android:id="@+id/head_button"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="right|center"
+                android:text=""
+                android:textColor="#007AFF"
+                android:gravity="center"
+                android:textSize="@dimen/sp_16" />
+            <!--搜索-->
+            <ImageView
+                android:id="@+id/head_search"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
